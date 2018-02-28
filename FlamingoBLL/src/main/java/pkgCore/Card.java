@@ -16,22 +16,22 @@ public class Card implements Comparable {
 	//	TODO: Add a public 'getter' method for eRank and eSuit.  
 	//			Add a private 'setter' method for eRank and eSuit
 	
-	public int getRank()
+	public int geteRank()
 	{
 		return this.eRank;
 	}
 	
-	public int getSuit();
+	public int geteSuit();
 	{
 		return this.sSuit;
 	}
 	
-	public void setRank(int r)
+	public void seteRank(int r)
 	{
 		this.eRank = r;
 	}
 	
-	public void setSuit(int s)
+	public void seteSuit(int s)
 	{
 		this.eSuit = s 
 	}
@@ -39,7 +39,7 @@ public class Card implements Comparable {
 	@Override
 	public int compareTo(Object o) {
 		Card c = (Card) o;
-		return 0;
+		return c.geteRank().compareTo(this.geteRank());
 		//return c.geteRank().compareTo(this.geteRank());
 
 }
