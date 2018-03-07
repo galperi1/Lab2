@@ -26,12 +26,12 @@ public class Card implements Comparable {
 		return this.sSuit;
 	}
 	
-	public void seteRank(int r)
+	private void seteRank(int r)
 	{
 		this.eRank = r;
 	}
 	
-	public void seteSuit(int s)
+	private void seteSuit(int s)
 	{
 		this.eSuit = s 
 	}
